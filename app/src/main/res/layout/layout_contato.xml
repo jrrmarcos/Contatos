@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nomeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/sobrenomeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sobrenome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/telefoneTv"
+        app:layout_constraintTop_toBottomOf="@+id/nomeTv"/>
+
+    <TextView
+        android:id="@+id/telefoneTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        app:layout_constraintStart_toEndOf="@+id/sobrenomeTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeTv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
